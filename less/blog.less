@@ -1,4 +1,10 @@
  
+// Mixins
+
+@width: 350px;
+  
+
+
 h1 {
     font-size: 5rem;
   }
@@ -13,15 +19,72 @@ h1 {
     bottom: 217px;
   }
   .articles {
-    background-color: #d10c37;
-    width: 100%;
-    margin: 0;
+    background:linear-gradient( white 30%, #bc0303 30%);
+    
   }
 
   #background{
     background: linear-gradient( white 30%, #ffed4b 30%);
 }
 
+.footer{
+    display: flex;
+    align-items: center;
+    flex-flow: wrap;
+    width: 100%;
+
+    .pikachu{
+        position: relative;
+        left: 300px;
+        margin: 24px 4%;
+    }
+}
+
+.links{
+    position: relative;
+    left: 700px;
+
+    img  {
+        display: block;
+        width:@width;
+        padding: 0px;
+        margin: 24px 5%;
+    }
+}
+
+
+.footer-p{
+    background: #ffed4b;
+    .footer-a{
+    width: 40%;
+        display: inline-flex;
+        justify-content: space-evenly;
+        align-items: baseline;
+
+        a{
+            text-decoration: none;
+            color: black;
+
+        }
+
+ 
+}
+}
+// Articles
+
+.article {
+    
+    margin: 24px 4%;
+    padding: 0 20px 25px;
+    border: 1px solid lightgrey;
+    border-radius: 10px;
+    background-color: white;
+    position: relative;
+    height: 200px;
+    overflow: hidden;
+    box-shadow: 2px 2px 2px lightgrey;
+  }
 
   
+
   
