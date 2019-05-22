@@ -1,3 +1,24 @@
 body {
   background-color: red;
 }
+h1 {
+  font-size: 5rem;
+}
+.hero {
+  display: block;
+  width: 100%;
+}
+.herotext {
+  display: inline-block;
+  position: relative;
+  right: 700px;
+  bottom: 217px;
+}
+.articles {
+  background-color: #d10c37;
+  width: 100%;
+  margin: 0;
+}
+#background {
+  background: linear-gradient(white 30%, #ffed4b 30%);
+}
