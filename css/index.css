@@ -57,6 +57,40 @@ body h3 {
 .not-selected {
   display: none;
 }
+#drawer-nav {
+  position: absolute;
+  width: 100%;
+  height: 100px;
+}
+#drawer-nav ul {
+  list-style: none;
+  font-size: 24px;
+  width: 100%;
+  height: 100px;
+  margin: 0;
+  padding: 0;
+  display: flex;
+  justify-content: space-between;
+  background-color: #ff0051;
+  color: #fff;
+}
+#drawer-nav ul li {
+  width: 100%;
+  text-align: center;
+  padding-top: 30px;
+}
+#drawer-nav ul :hover {
+  background-color: #ffcc08;
+  cursor: pointer;
+}
+.drawer-out {
+  z-index: 1;
+  top: 100;
+}
+.drawer-hide {
+  z-index: -1000;
+  top: 0;
+}
 #banner {
   background-image: url('../img/cover.jpg');
   background-repeat: no-repeat;

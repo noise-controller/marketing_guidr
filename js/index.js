@@ -29,3 +29,16 @@ const selected = document.querySelectorAll('.icon');
 selected.forEach(function(element){
     return new ICONS(element);
 });
+
+
+
+
+const arrow = document.querySelector(".arrow");
+const drawer = document.getElementById("drawer-nav");
+
+
+arrow.addEventListener('click', function(){
+    drawer.classList.toggle('drawer-hide');
+    drawer.classList.toggle('drawer-out');
+
+});
