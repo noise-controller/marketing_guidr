@@ -1,7 +1,51 @@
-@red: red;
-
-
+//VARIABLES
+@deepBlue: #0060b2;
+@pikaYellow: #ffcc08;
+@pikaRed:#ff0051;
+@pikaGrey:#4d4d4d;
+@white: #fff;
+@black:#020202;
 
 body{
-    background-color: @red;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+#navigation{
+    background-color:@deepBlue;
+    height:150px;
+    display:flex;
+    align-items:center;
+
+
+    ul{
+        color:@white;
+        list-style:none;
+        font-size:24px;
+        flex-grow:2;
+        display:flex;
+        justify-content:space-around;
+
+        li{
+            cursor: pointer;
+        }
+    }
+
+    div{
+        flex-grow:3;
+    }
+
+    button{
+        width:200px;
+        height:100%;
+        color: @pikaRed;
+        background-color:@pikaYellow;
+        font-size:36px;
+        }
+        
+    }
+
+
+
+.selected{
+    text-decoration:underline;
 }
