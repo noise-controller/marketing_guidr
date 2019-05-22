@@ -20,6 +20,20 @@ body{
     display:flex;
     align-items:center;
 
+    .arrow{
+        display:none;
+        @media (max-width: 800px) {
+            display:block;
+            width:50px;
+            height:50px;
+            cursor: pointer;
+        }
+    }
+
+    .pkicon{
+        width:15px;
+        height:15px;
+    }
 
     ul{
         color:@white;
@@ -28,6 +42,11 @@ body{
         flex-grow:2;
         display:flex;
         justify-content:space-around;
+
+        @media (max-width: 800px) {
+
+           display:none;
+          }
 
         li{
             cursor: pointer;
@@ -49,9 +68,8 @@ body{
     }
 
 
-
-.selected{
-    text-decoration:underline;
+.not-selected{
+    display:none;
 }
 
 #banner{
@@ -66,11 +84,15 @@ body{
     align-items:center;
     justify-content:center;
 
+    @media (max-width: 800px) {
+            height:600px;
+    }
+
     h1{
-        font-size:100px;
+        font-size:8vw;
     }
     .text{
-        font-size:45px;
+        font-size:3vw;
         width:80%;
     }
 }
@@ -84,14 +106,38 @@ body{
     align-items:center;
     padding:50px;
 
+    @media (max-width: 800px) {
+
+      flex-direction:column;
+      padding: 50px 0 0 0;
+      height:600px;
+       
+      }
+
+    h2{
+        font-size:4vw;
+    }
+
     .text{
-        font-size:24px;
+        font-size:3vw;
         width:700px;
+        @media (max-width: 800px) {
+            width:80%; 
+           
+          }
     }
 
     img{
-        width:600px;
-        height:600px;
+       width:600px;
+       height:600px;
+
+       @media (max-width: 800px) {
+
+        width:300px;
+        height:300px;
+       
+      }
+
     }
 }
 
@@ -104,14 +150,40 @@ body{
     align-items:center;
     padding:50px;
 
+    @media (max-width: 800px) {
+
+        flex-direction:column;
+        padding: 50px 0 0 0;
+        height:600px;
+         
+           
+    }
+
+
+    h2{
+        font-size:4vw;
+    }
     .text{
-        font-size:24px;
+        font-size:3vw;
         width:700px;
+
+        @media (max-width: 800px) {
+            width:80%;
+           
+        }
+
     }
 
     img{
         width:600px;
         height:600px;
+
+        @media (max-width: 800px) {
+
+            width:300px;
+            height:300px;
+           
+          }
     }
 }
 
@@ -123,9 +195,22 @@ body{
     align-items:center;
     padding:50px;
 
+    @media (max-width: 800px) {
+            height:600px;
+    }
+    h2{
+        font-size:4vw;
+    }
+
     .text{
-        font-size:24px;
+        font-size:3vw;
         width:700px;
+
+        @media (max-width: 800px) {
+            width:80%;
+        }
+
+        
     }
 
 }

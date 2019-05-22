@@ -13,6 +13,21 @@ body h3 {
   display: flex;
   align-items: center;
 }
+#navigation .arrow {
+  display: none;
+}
+@media (max-width: 800px) {
+  #navigation .arrow {
+    display: block;
+    width: 50px;
+    height: 50px;
+    cursor: pointer;
+  }
+}
+#navigation .pkicon {
+  width: 15px;
+  height: 15px;
+}
 #navigation ul {
   color: #fff;
   list-style: none;
@@ -20,6 +35,11 @@ body h3 {
   flex-grow: 2;
   display: flex;
   justify-content: space-around;
+}
+@media (max-width: 800px) {
+  #navigation ul {
+    display: none;
+  }
 }
 #navigation ul li {
   cursor: pointer;
@@ -34,8 +54,8 @@ body h3 {
   background-color: #ffcc08;
   font-size: 24px;
 }
-.selected {
-  text-decoration: underline;
+.not-selected {
+  display: none;
 }
 #banner {
   background-image: url('../img/cover.jpg');
@@ -49,11 +69,16 @@ body h3 {
   align-items: center;
   justify-content: center;
 }
+@media (max-width: 800px) {
+  #banner {
+    height: 600px;
+  }
+}
 #banner h1 {
-  font-size: 100px;
+  font-size: 8vw;
 }
 #banner .text {
-  font-size: 45px;
+  font-size: 3vw;
   width: 80%;
 }
 #what {
@@ -65,13 +90,34 @@ body h3 {
   align-items: center;
   padding: 50px;
 }
+@media (max-width: 800px) {
+  #what {
+    flex-direction: column;
+    padding: 50px 0 0 0;
+    height: 600px;
+  }
+}
+#what h2 {
+  font-size: 4vw;
+}
 #what .text {
-  font-size: 24px;
+  font-size: 3vw;
   width: 700px;
+}
+@media (max-width: 800px) {
+  #what .text {
+    width: 80%;
+  }
 }
 #what img {
   width: 600px;
   height: 600px;
+}
+@media (max-width: 800px) {
+  #what img {
+    width: 300px;
+    height: 300px;
+  }
 }
 #how {
   background-color: #ff0051;
@@ -82,13 +128,34 @@ body h3 {
   align-items: center;
   padding: 50px;
 }
+@media (max-width: 800px) {
+  #how {
+    flex-direction: column;
+    padding: 50px 0 0 0;
+    height: 600px;
+  }
+}
+#how h2 {
+  font-size: 4vw;
+}
 #how .text {
-  font-size: 24px;
+  font-size: 3vw;
   width: 700px;
+}
+@media (max-width: 800px) {
+  #how .text {
+    width: 80%;
+  }
 }
 #how img {
   width: 600px;
   height: 600px;
+}
+@media (max-width: 800px) {
+  #how img {
+    width: 300px;
+    height: 300px;
+  }
 }
 #who {
   color: #4d4d4d;
@@ -98,9 +165,22 @@ body h3 {
   align-items: center;
   padding: 50px;
 }
+@media (max-width: 800px) {
+  #who {
+    height: 600px;
+  }
+}
+#who h2 {
+  font-size: 4vw;
+}
 #who .text {
-  font-size: 24px;
+  font-size: 3vw;
   width: 700px;
+}
+@media (max-width: 800px) {
+  #who .text {
+    width: 80%;
+  }
 }
 h1 {
   font-size: 5rem;
