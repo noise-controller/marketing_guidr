@@ -42,3 +42,30 @@ arrow.addEventListener('click', function(){
     drawer.classList.toggle('drawer-out');
 
 });
+
+
+//slide-in
+
+const slideInImg = document.querySelectorAll('.slide-in');
+function slideIt(){
+    slideInImg.forEach(image =>{
+
+        const slideIn = (window.scrollY + window.innerHeight) - image.height / 2;
+        const imgBttm= image.offsetTop + image.height;
+        const halfShown = slideIn > image.offsetTop;
+        const isnotPastImg = window.scrollY < imgBttm;
+
+
+        if(halfShown && isnotPastImg){
+            image.classList.add('active');
+        } else{
+            image.classList.remove('active');
+        }
+     
+
+    });
+
+}
+  
+
+window.addEventListener('scroll', slideIt);

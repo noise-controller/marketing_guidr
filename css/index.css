@@ -163,14 +163,6 @@ body a {
     height: 300px;
   }
 }
-@keyframes animate {
-  from {
-    background-position: 0 0;
-  }
-  to {
-    background-position: 100% 0;
-  }
-}
 #how {
   background-color: #ff0051;
   color: #ffcc08;
@@ -233,6 +225,22 @@ body a {
   #who .text {
     width: 80%;
   }
+}
+@keyframes animate {
+  from {
+    background-position: 0 0;
+  }
+  to {
+    background-position: 100% 0;
+  }
+}
+.slide-in {
+  transform: translateX(100%) scale(0.8);
+  opacity: 0;
+}
+.active {
+  transform: translateX(0) scale(1);
+  opacity: 1;
 }
 h1 {
   font-size: 5rem;

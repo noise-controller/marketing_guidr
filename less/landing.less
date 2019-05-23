@@ -198,15 +198,6 @@ body{
 
 
 
-@keyframes animate{
-    from{
-        background-position:0 0;
-
-    }
-    to{
-        background-position:100% 0;
-    }
-}
 
 #how{
     background-color:@pikaRed;
@@ -281,3 +272,33 @@ body{
     }
 
 }
+
+
+
+
+//ANIMATION
+
+@keyframes animate{
+    from{
+        background-position:0 0;
+
+    }
+    to{
+        background-position:100% 0;
+    }
+}
+
+
+
+.slide-in{
+    transform:translateX(100%) scale(0.80);
+    opacity:0;
+}
+
+.active{
+    transform:translateX(0) scale(1);
+    opacity:1;
+
+}
+
+
