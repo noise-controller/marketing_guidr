@@ -79,7 +79,7 @@ body a {
   padding: 0;
   display: flex;
   justify-content: space-between;
-  background-color: #ff0051;
+  background-color: #0060b2;
   color: #fff;
 }
 #drawer-nav ul li {
@@ -164,7 +164,7 @@ body a {
   }
 }
 #how {
-  background-color: #ff0051;
+  background-color: #bc0303;
   color: #ffcc08;
   display: flex;
   width: 100%;
@@ -271,15 +271,49 @@ h2 {
   left: 300px;
   margin: 24px 4%;
 }
+@media (max-width: 500px) {
+  .footer .pikachu {
+    padding-left: 20px;
+  }
+}
+@media (max-width: 800px) {
+  .footer .pikachu {
+    left: 50px;
+  }
+}
+@media (max-width: 800px) {
+  .footer img {
+    width: 200px;
+  }
+}
+@media (max-width: 500px) {
+  .footer img {
+    width: 300px;
+  }
+}
 .links {
   position: relative;
   left: 700px;
 }
 .links img {
-  display: block;
+  display: flex;
   width: 350px;
   padding: 0px;
   margin: 24px 5%;
+}
+@media (max-width: 500px) {
+  .links {
+    left: 50px;
+    width: 350px;
+    display: block;
+  }
+}
+@media (max-width: 800px) {
+  .links {
+    left: 50px;
+    width: 350px;
+    display: block;
+  }
 }
 .footer-p {
   background: #ffed4b;
@@ -289,6 +323,11 @@ h2 {
   display: inline-flex;
   justify-content: space-evenly;
   align-items: baseline;
+}
+@media (max-width: 500px) {
+  .footer-p .footer-a {
+    width: 100%;
+  }
 }
 .footer-p .footer-a a {
   text-decoration: none;
@@ -304,6 +343,14 @@ h2 {
   height: 50px;
   overflow: hidden;
   box-shadow: 2px 2px 2px lightgrey;
+}
+@media (max-width: 500px) {
+  .article {
+    height: 90px;
+  }
+}
+.article p {
+  font-size: 20px;
 }
 .article h2 {
   font-size: 28px;
@@ -332,4 +379,9 @@ h2 {
 .article-open {
   padding-bottom: 600px;
   border: 1px solid black;
+}
+@media (max-width: 800px) {
+  .article-open {
+    height: 1500px;
+  }
 }

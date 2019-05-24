@@ -1,8 +1,15 @@
  
-// Mixins
+//Var
 
 @width: 350px;
-  
+@deepBlue: #0060b2;
+@pikaYellow: #ffcc08;
+@pikaRed: #bc0303;
+@pikaGrey:#4d4d4d;
+@white: #fff;
+@black:#020202;
+@tablet: 800px;
+@mobile: 500px;
 
 
 h1 {
@@ -15,13 +22,15 @@ h1 {
     margin: 15px 0 0;
   }
 
+ 
+
   .hero img {
     
     width: 100%;
   }
 
   .articles {
-    background:linear-gradient( white 30%, #bc0303 30%);
+    background:linear-gradient( white 30%,  #bc0303 30%);
     
   }
 
@@ -40,30 +49,75 @@ h1 {
         position: relative;
         left: 300px;
         margin: 24px 4%;
+
+        @media (max-width: @mobile){
+          padding-left: 20px;
+        }
+
+        @media (max-width:@tablet){
+          left: 50px;
+        } 
+      }
+
+      img{
+        @media (max-width: @tablet){
+          width: 200px;
+          
+        }
+        @media (max-width: @mobile){
+        width: 300px;
+        
+        }
+
+      }
     }
-}
+
+
+      
 
 .links{
     position: relative;
     left: 700px;
+ 
 
     img  {
-        display: block;
+        display: flex;
         width:@width;
         padding: 0px;
         margin: 24px 5%;
     }
+
+
+    @media (max-width:@mobile) {
+
+      left: 50px;
+      width:@width;
+      display: block;
+    }
+
+    @media (max-width: @tablet) {
+
+      left: 50px;
+      width:@width;
+      display: block;
+    }
+
+    
 }
 
 
 .footer-p{
     background: #ffed4b;
     .footer-a{
-    width: 40%;
+        width: 40%;
         display: inline-flex;
         justify-content: space-evenly;
         align-items: baseline;
 
+        @media(max-width: @mobile){
+           width: 100%;
+        }
+        
         a{
             text-decoration: none;
             color: black;
@@ -86,6 +140,14 @@ h1 {
   height: 50px;
   overflow: hidden;
   box-shadow: 2px 2px 2px lightgrey;
+
+  @media (max-width: 500px){
+    height: 90px;
+  }
+ 
+p{
+  font-size: 20px;
+}
 
   h2 {
     font-size: 28px;
@@ -121,7 +183,13 @@ h1 {
 .article-open {
   padding-bottom: 600px;
   border: 1px solid black;
+
+  @media (max-width: @tablet){
+    height: 1500px;
+  }
 }
+
+
 
 
   
