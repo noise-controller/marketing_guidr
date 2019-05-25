@@ -260,60 +260,37 @@ h2 {
   background: linear-gradient(white 30%, #ffed4b 30%);
 }
 .footer {
-  margin-top: 500 PX;
   display: flex;
   align-items: center;
   flex-flow: wrap;
   width: 100%;
 }
+@media (max-width: 800px) {
+  .footer {
+    flex-direction: column;
+  }
+}
 .footer .pikachu {
-  position: relative;
-  left: 300px;
-  margin: 24px 4%;
+  width: 50%;
+  display: flex;
+  justify-content: center;
 }
-@media (max-width: 500px) {
-  .footer .pikachu {
-    padding-left: 20px;
-  }
-}
-@media (max-width: 800px) {
-  .footer .pikachu {
-    left: 50px;
-  }
-}
-@media (max-width: 800px) {
-  .footer img {
-    width: 200px;
-  }
-}
-@media (max-width: 500px) {
-  .footer img {
-    width: 300px;
-  }
+.footer .pikachu img {
+  width: 200px;
+  height: 200px;
 }
 .links {
-  position: relative;
-  left: 700px;
+  width: 50%;
+  display: flex;
+  justify-content: center;
 }
 .links img {
+  width: 200px;
+  height: auto;
+}
+.links div {
   display: flex;
-  width: 350px;
-  padding: 0px;
-  margin: 24px 5%;
-}
-@media (max-width: 500px) {
-  .links {
-    left: 50px;
-    width: 350px;
-    display: block;
-  }
-}
-@media (max-width: 800px) {
-  .links {
-    left: 50px;
-    width: 350px;
-    display: block;
-  }
+  flex-direction: column;
 }
 .footer-p {
   background: #ffed4b;
